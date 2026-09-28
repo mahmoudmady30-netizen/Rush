@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta name="theme-color" content="#05070b"><link rel="manifest" href="manifest.json">
+<title>Motion Rush 2</title><link rel="stylesheet" href="src/style.css">
+</head>
+<body>
+<div id="app">
+  <canvas id="world"></canvas>
+  <video id="camera" autoplay playsinline muted></video>
+  <canvas id="pose"></canvas>
+  <div id="topbar" class="hidden"><div><b id="score">0</b><small>SCORE</small></div><div><b id="coins">0</b><small>COINS</small></div><div><b id="distance">0</b><small>M</small></div><button id="pause">Ⅱ</button></div>
+  <div id="motion">MOTION READY</div>
+
+  <section id="home" class="panel">
+    <div class="logo">MOTION<span>RUSH</span></div><p>Your body is the controller.</p>
+    <button id="play" class="primary">START RUN</button>
+    <button id="cal" class="secondary">CALIBRATE</button>
+    <div class="cards"><div>↔️<b>LEAN</b><small>Change lane</small></div><div>🙌<b>HANDS UP</b><small>Jump</small></div><div>🧎<b>CROUCH</b><small>Slide</small></div></div>
+    <div class="links"><button id="wardrobe">SKINS</button><button id="missions">MISSIONS</button><button id="settings">SETTINGS</button></div>
+  </section>
+
+  <section id="over" class="panel hidden"><div class="logo small">RUN<span>OVER</span></div><h2 id="final">0</h2><p id="runStats"></p><button id="again" class="primary">RUN AGAIN</button><button id="home" class="secondary">HOME</button></section>
+
+  <section id="modal" class="modal hidden"><div class="modalbox"><button id="close">×</button><h2 id="modalTitle"></h2><div id="modalBody"></div></div></section>
+</div>
+<script type="module" src="src/main.js"></script>
+</body></html>
